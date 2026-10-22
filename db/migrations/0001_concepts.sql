@@ -7,8 +7,7 @@ CREATE TABLE IF NOT EXISTS concepts (
     -- HSK 7-9 exist (the "advanced" band above the old 6-level list); upper
     -- levels are out of scope for now but must not be illegal.
     hsk_level SMALLINT NOT NULL CHECK (hsk_level BETWEEN 1 AND 9),
-    meaning   TEXT NOT NULL,
-    UNIQUE (id, kind)
+    meaning   TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS vocabulary (
