@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
       POSTGRES_DB: shuqiao
     ports:
-      - "5432:5432"
+      - "5440:5432"
     volumes:
       - shuqiao_psql:/var/lib/postgresql/data
     healthcheck:
