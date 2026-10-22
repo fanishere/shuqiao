@@ -13,6 +13,11 @@ principles. Features that violate a principle are wrong even if they pass tests.
 3. Ticket branches merge to `main` only via a pull request on GitHub.
 4. Tickets live on the Jira Kanban board **SHU**. `Idea` tickets are not ready;
    everything without the `Manual` label is ready or in progress.
+5. Read tickets from the local board cache in `board/` (one card per ticket,
+   plus `INDEX.md`) — not from Jira. Record status changes, comments, and
+   artifact attachments as pending ops on the card instead of calling Jira.
+   Only the flush procedure pushes ops back to Jira. See `board/README.md`.
+   Never re-pull while any card has `dirty: true`.
 
 ## Worktrees
 The ticket's worktree is **shared and stable**: one worktree per ticket at
