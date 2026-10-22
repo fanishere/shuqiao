@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      # postgres:18 defaults PGDATA to a version-specific subdir; pin it to the mount point
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_USER: shuqiao
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: shuqiao
+    ports:
+      - "5432:5432"
+    volumes:
+      - shuqiao_psql:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U shuqiao -d shuqiao"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  shuqiao_psql:
