@@ -26,9 +26,11 @@ CREATE TABLE IF NOT EXISTS vocabulary_concepts (
     meaning       TEXT NOT NULL,
     examples      JSONB NOT NULL DEFAULT '[]',
     sense_index   INT NOT NULL,
-    -- sense_index orders the senses of one concept; examples items are
-    -- {hanzi, pinyin, english} objects.
-    UNIQUE (concept_id, sense_index)
+    -- hanzi/pinyin/meaning are per-sense text and may legitimately differ from
+    -- the vocabulary headword row; the denormalization is intentional, do not
+    -- "fix" it in the SHU-16 importer. sense_index orders the senses of one
+    -- concept; examples items are {hanzi, pinyin, english} objects.
+    PRIMARY KEY (concept_id, sense_index)
 );
 
 CREATE TABLE IF NOT EXISTS grammar_categories (
@@ -42,7 +44,8 @@ CREATE TABLE IF NOT EXISTS grammar_concepts (
     name        TEXT NOT NULL,
     pattern     TEXT NOT NULL,
     explanation TEXT NOT NULL,
-    examples    JSONB NOT NULL DEFAULT '[]'
+    examples    JSONB NOT NULL DEFAULT '[]',
+    PRIMARY KEY (concept_id)
 );
 
 CREATE TABLE IF NOT EXISTS user_concepts (
@@ -52,11 +55,10 @@ CREATE TABLE IF NOT EXISTS user_concepts (
     first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     known_at      TIMESTAMPTZ,
     -- user_id is TEXT: no users table yet, auth lands in SHU-15.
-    CHECK (status = 'known' OR known_at IS NULL),
+    CHECK ((status = 'known') = (known_at IS NOT NULL)),
     UNIQUE (user_id, concept_id)
 );
 
-CREATE INDEX IF NOT EXISTS vocabulary_concepts_concept_idx ON vocabulary_concepts (concept_id);
+CREATE INDEX IF NOT EXISTS vocabulary_concepts_vocabulary_idx ON vocabulary_concepts (vocabulary_id);
 CREATE INDEX IF NOT EXISTS grammar_concepts_category_idx ON grammar_concepts (category_id);
-CREATE INDEX IF NOT EXISTS user_concepts_user_idx ON user_concepts (user_id);
 CREATE INDEX IF NOT EXISTS concepts_hsk_idx ON concepts (hsk_level, kind);
