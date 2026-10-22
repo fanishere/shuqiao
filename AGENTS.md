@@ -23,8 +23,7 @@ principles. Features that violate a principle are wrong even if they pass tests.
 The ticket's worktree is **shared and stable**: one worktree per ticket at
 `.worktrees/SHU-<id>/` inside the repo (`.worktrees/` is gitignored), created by
 whoever starts first, used by all roles (developer, reviewer, tester) for the
-life of the ticket. Never create a second worktree for the same ticket. Delete
-it only after the PR is merged and the ticket is closed.
+life of the ticket. Never create a second worktree for the same ticket.
 Caution: `.worktrees/` is ignored, so `git status` won't warn about its
 contents — never run blanket `git clean` in the repo root; remove worktrees
 with `git worktree remove`.
