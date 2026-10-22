@@ -33,6 +33,11 @@ tmp/
 .env
 .env.*
 
+# CEDICT data files (large, CC BY-SA 4.0; rebuild with dict_db_builder)
+dict_db/*.db
+*.u8
+cedict_1_0_ts_utf-8_mdbg.txt
+
 # Local Jira board cache cards (see board/README.md); scripts + README are committed
 board/SHU-*.md
 board/INDEX.md
