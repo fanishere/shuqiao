@@ -7,7 +7,9 @@ CREATE TABLE IF NOT EXISTS concepts (
     -- import-level identity and is implied by the PK.
     id        TEXT PRIMARY KEY,
     kind      TEXT NOT NULL CHECK (kind IN ('vocab', 'grammar')),
-    hsk_level SMALLINT NOT NULL CHECK (hsk_level BETWEEN 1 AND 6),
+    -- HSK 7-9 exist (the "advanced" band above the old 6-level list); upper
+    -- levels are out of scope for now but must not be illegal.
+    hsk_level SMALLINT NOT NULL CHECK (hsk_level BETWEEN 1 AND 9),
     meaning   TEXT NOT NULL,
     UNIQUE (id, kind)
 );
