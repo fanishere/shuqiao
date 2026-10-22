@@ -2,10 +2,7 @@
 -- Idempotent by design; rerunning converges to the same schema.
 
 CREATE TABLE IF NOT EXISTS concepts (
-    -- id is a stable import key from the HSK list files, not a surrogate uuid.
-    -- PRIMARY KEY because child FKs reference id alone; UNIQUE(id, kind) is the
-    -- import-level identity and is implied by the PK.
-    id        TEXT PRIMARY KEY,
+    id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     kind      TEXT NOT NULL CHECK (kind IN ('vocab', 'grammar')),
     -- HSK 7-9 exist (the "advanced" band above the old 6-level list); upper
     -- levels are out of scope for now but must not be illegal.
@@ -20,7 +17,7 @@ CREATE TABLE IF NOT EXISTS vocabulary (
 );
 
 CREATE TABLE IF NOT EXISTS vocabulary_concepts (
-    concept_id    TEXT NOT NULL REFERENCES concepts (id),
+    concept_id    BIGINT NOT NULL REFERENCES concepts (id),
     vocabulary_id BIGINT NOT NULL REFERENCES vocabulary (id),
     hanzi         TEXT NOT NULL,
     pinyin        TEXT NOT NULL,
@@ -41,7 +38,7 @@ CREATE TABLE IF NOT EXISTS grammar_categories (
 );
 
 CREATE TABLE IF NOT EXISTS grammar_concepts (
-    concept_id  TEXT NOT NULL REFERENCES concepts (id),
+    concept_id  BIGINT NOT NULL REFERENCES concepts (id),
     category_id BIGINT NOT NULL REFERENCES grammar_categories (id),
     name        TEXT NOT NULL,
     pattern     TEXT NOT NULL,
@@ -52,7 +49,7 @@ CREATE TABLE IF NOT EXISTS grammar_concepts (
 
 CREATE TABLE IF NOT EXISTS user_concepts (
     user_id       TEXT NOT NULL,
-    concept_id    TEXT NOT NULL REFERENCES concepts (id),
+    concept_id    BIGINT NOT NULL REFERENCES concepts (id),
     status        TEXT NOT NULL CHECK (status IN ('learning', 'known')),
     first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     known_at      TIMESTAMPTZ,
