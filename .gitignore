@@ -1,0 +1,34 @@
+# Worktrees (in-repo, ignored — never commit them)
+.worktrees/
+
+# Build artifacts
+artifacts/
+bin/
+obj/
+out/
+dist/
+node_modules/
+target/
+
+# .NET / Rider / VS
+*.user
+*.suo
+.vs/
+.idea/
+*.DotSettings.user
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+tmp/
+.env
+.env.*
