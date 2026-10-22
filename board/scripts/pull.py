@@ -3,7 +3,10 @@
 import json, sys, os
 
 data = json.load(open(sys.argv[1]))
-issues = data["issues"]
+issues = [it for it in data["issues"]
+          if (it.get("status") or {}).get("name") != "Ideas"
+          and (it.get("issue_type") or {}).get("name") != "Epic"]
+keys = {it["key"] for it in issues}
 board = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.makedirs(board, exist_ok=True)
 
@@ -51,4 +54,16 @@ dirty: false
 
 with open(os.path.join(board, "INDEX.md"), "w") as f:
     f.write("\n".join(index) + "\n")
+
+# remove stale cards not in this pull (skip dirty ones — they hold unflushed ops)
+import glob, re
+for path in glob.glob(os.path.join(board, "SHU-*.md")):
+    key = os.path.basename(path)[:-3]
+    if key not in keys:
+        body = open(path).read()
+        if re.search(r"^dirty: true", body, re.M):
+            print(f"kept dirty stale card {key}")
+        else:
+            os.remove(path)
+            print(f"removed stale card {key}")
 print(f"wrote {len(issues)} cards + INDEX.md")
