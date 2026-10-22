@@ -1,0 +1,62 @@
+-- SHU-13: language concepts schema
+-- Idempotent by design; rerunning converges to the same schema.
+
+CREATE TABLE IF NOT EXISTS concepts (
+    -- id is a stable import key from the HSK list files, not a surrogate uuid.
+    -- PRIMARY KEY because child FKs reference id alone; UNIQUE(id, kind) is the
+    -- import-level identity and is implied by the PK.
+    id        TEXT PRIMARY KEY,
+    kind      TEXT NOT NULL CHECK (kind IN ('vocab', 'grammar')),
+    hsk_level SMALLINT NOT NULL CHECK (hsk_level BETWEEN 1 AND 6),
+    meaning   TEXT NOT NULL,
+    UNIQUE (id, kind)
+);
+
+CREATE TABLE IF NOT EXISTS vocabulary (
+    id    BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    hanzi TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS vocabulary_concepts (
+    concept_id    TEXT NOT NULL REFERENCES concepts (id),
+    vocabulary_id BIGINT NOT NULL REFERENCES vocabulary (id),
+    hanzi         TEXT NOT NULL,
+    pinyin        TEXT NOT NULL,
+    pos           TEXT[] NOT NULL,
+    meaning       TEXT NOT NULL,
+    examples      JSONB NOT NULL DEFAULT '[]',
+    sense_index   INT NOT NULL,
+    -- sense_index orders the senses of one concept; examples items are
+    -- {hanzi, pinyin, english} objects.
+    UNIQUE (concept_id, sense_index)
+);
+
+CREATE TABLE IF NOT EXISTS grammar_categories (
+    id   BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS grammar_concepts (
+    concept_id  TEXT NOT NULL REFERENCES concepts (id),
+    category_id BIGINT NOT NULL REFERENCES grammar_categories (id),
+    name        TEXT NOT NULL,
+    pattern     TEXT NOT NULL,
+    explanation TEXT NOT NULL,
+    examples    JSONB NOT NULL DEFAULT '[]'
+);
+
+CREATE TABLE IF NOT EXISTS user_concepts (
+    user_id       TEXT NOT NULL,
+    concept_id    TEXT NOT NULL REFERENCES concepts (id),
+    status        TEXT NOT NULL CHECK (status IN ('learning', 'known')),
+    first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    known_at      TIMESTAMPTZ,
+    -- user_id is TEXT: no users table yet, auth lands in SHU-15.
+    CHECK (status = 'known' OR known_at IS NULL),
+    UNIQUE (user_id, concept_id)
+);
+
+CREATE INDEX IF NOT EXISTS vocabulary_concepts_concept_idx ON vocabulary_concepts (concept_id);
+CREATE INDEX IF NOT EXISTS grammar_concepts_category_idx ON grammar_concepts (category_id);
+CREATE INDEX IF NOT EXISTS user_concepts_user_idx ON user_concepts (user_id);
+CREATE INDEX IF NOT EXISTS concepts_hsk_idx ON concepts (hsk_level, kind);
