@@ -1,9 +1,49 @@
 #!/usr/bin/env python3
 # Regenerate board/*.md from a SEARCH_ISSUES result (paste JSON below).
+# Accepts two input shapes:
+#   - flat:   top-level summary/status/issue_type/... (Hermes Jira connector)
+#   - raw:    issues[].fields.* nesting with ADF description (Atlassian Jira MCP)
 import json, sys, os
 
+def adf_text(node):
+    """Flatten an Atlassian Document Format node (or list) to plain text."""
+    if isinstance(node, list):
+        parts = [adf_text(c) for c in node]
+        return "\n".join(p for p in parts if p)
+    if not isinstance(node, dict):
+        return ""
+    if node.get("type") == "text":
+        return node.get("text", "")
+    parts = [adf_text(c) for c in node.get("content", [])]
+    return "\n".join(p for p in parts if p)
+
+def normalize(it):
+    """Return a flat issue dict from either the raw or flat shape."""
+    f = it.get("fields")
+    if f is None:  # already flat
+        out = dict(it)
+    else:  # raw API/MCP shape
+        out = {
+            "key": it.get("key"),
+            "id": it.get("id"),
+            "summary": f.get("summary", ""),
+            "description": f.get("description"),
+            "status": f.get("status") or {},
+            "issue_type": f.get("issuetype") or {},
+            "labels": f.get("labels") or [],
+            "assignee": f.get("assignee") or {},
+            "priority": f.get("priority") or {},
+            "updated": f.get("updated", ""),
+        }
+    desc = out.get("description")
+    if isinstance(desc, dict):
+        desc = adf_text(desc)
+    out["description"] = (desc or "").strip()
+    return out
+
 data = json.load(open(sys.argv[1]))
-issues = [it for it in data["issues"]
+issues = [normalize(it) for it in data["issues"]]
+issues = [it for it in issues
           if (it.get("issue_type") or {}).get("name") != "Epic"
           and (it.get("status") or {}).get("name") != "Done"]
 keys = {it["key"] for it in issues}
