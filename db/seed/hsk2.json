@@ -1,0 +1,3972 @@
+{
+  "version": 1,
+  "words": {
+    "多": [
+      {
+        "pinyin": "duō",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "many; much; more than the right amount (人很多; 多了两个)",
+        "examples": []
+      },
+      {
+        "pinyin": "duō",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "more (used before a verb or measure phrase: 多吃一点儿; 请多说一遍)",
+        "examples": []
+      },
+      {
+        "pinyin": "duō",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to what degree; how (in 有多… questions: 你家离学校有多远?)",
+        "examples": []
+      },
+      {
+        "pinyin": "duō",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to exceed by (a margin): 多花了两块钱",
+        "examples": []
+      }
+    ],
+    "给": [
+      {
+        "pinyin": "gěi",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to give; to hand over (给我你的电话号码)",
+        "examples": []
+      },
+      {
+        "pinyin": "gěi",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to; for (marks the receiver before the verb: 给他打电话; 我给你买了一个蛋糕)",
+        "examples": []
+      },
+      {
+        "pinyin": "jǐ",
+        "pos": [
+          "VERB"
+        ],
+        "register": "FORMAL",
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "to supply; to provide",
+        "examples": []
+      }
+    ],
+    "好": [
+      {
+        "pinyin": "hǎo",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "good; fine; OK",
+        "examples": []
+      },
+      {
+        "pinyin": "hǎo",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "very; so (before adjectives: 好冷啊; 好多人)",
+        "examples": []
+      },
+      {
+        "pinyin": "hào",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "to like; to be fond of (as in 爱好, 好学)",
+        "examples": []
+      }
+    ],
+    "那": [
+      {
+        "pinyin": "nà",
+        "pos": [
+          "PRONOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "that (also read nèi before measure words; base reading nà)",
+        "examples": []
+      },
+      {
+        "pinyin": "nà",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "then; in that case (那你怎么办?)",
+        "examples": []
+      }
+    ],
+    "啊": [
+      {
+        "pinyin": "a",
+        "pos": [
+          "PARTICLE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "sentence-final particle: exclamation, emphasis, or softening the tone (真漂亮啊!; 你说什么啊?)",
+        "examples": []
+      },
+      {
+        "pinyin": "a",
+        "pos": [
+          "INTERJECTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "ah; oh (expressing surprise or realization)",
+        "examples": []
+      }
+    ],
+    "爱好": [
+      {
+        "pinyin": "àihào",
+        "pos": [
+          "NOUN",
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "hobby; interest; to love, to be keen on (他的爱好是游泳)",
+        "examples": []
+      }
+    ],
+    "白色": [
+      {
+        "pinyin": "báisè",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "white (color)",
+        "examples": []
+      }
+    ],
+    "班": [
+      {
+        "pinyin": "bān",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "class; shift (上课, 上班; measure word 个)",
+        "examples": []
+      },
+      {
+        "pinyin": "bān",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "for scheduled runs of buses, trains, flights: 这班公交车, 一班飞机",
+        "examples": []
+      }
+    ],
+    "帮": [
+      {
+        "pinyin": "bāng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to help; to assist (帮妈妈做饭)",
+        "examples": []
+      }
+    ],
+    "帮忙": [
+      {
+        "pinyin": "bāngmáng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to help; to do a favor (separable 离合词: 帮了我一个大忙)",
+        "examples": []
+      }
+    ],
+    "包": [
+      {
+        "pinyin": "bāo",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "bag; sack; pouch (书包, 钱包; measure word 个)",
+        "examples": []
+      },
+      {
+        "pinyin": "bāo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to wrap; to pack (把书包起来)",
+        "examples": []
+      }
+    ],
+    "本子": [
+      {
+        "pinyin": "běnzi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "notebook; exercise book (measure word 个)",
+        "examples": []
+      }
+    ],
+    "比": [
+      {
+        "pinyin": "bǐ",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "than (comparison: A比B高; 今天比昨天冷)",
+        "examples": []
+      }
+    ],
+    "笔": [
+      {
+        "pinyin": "bǐ",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "pen; pencil; writing brush (measure word 支)",
+        "examples": []
+      },
+      {
+        "pinyin": "bǐ",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "for sums of money: 一笔钱",
+        "examples": []
+      }
+    ],
+    "别1": [
+      {
+        "pinyin": "bié",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "don't (imperative negative: 别走了!; 别说话)",
+        "examples": []
+      }
+    ],
+    "不好意思": [
+      {
+        "pinyin": "bù hǎoyìsi",
+        "pos": [
+          "INTERJECTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "excuse me; sorry (mild apology or before a request)",
+        "examples": []
+      },
+      {
+        "pinyin": "bù hǎoyìsi",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "embarrassed; shy; to feel awkward (让他很不好意思)",
+        "examples": []
+      }
+    ],
+    "不错": [
+      {
+        "pinyin": "bùcuò",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": "mild praise, informal",
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "pretty good; not bad",
+        "examples": []
+      }
+    ],
+    "长": [
+      {
+        "pinyin": "cháng",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "long (in length or duration)",
+        "examples": []
+      },
+      {
+        "pinyin": "zhǎng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to grow; to grow up (孩子长大了; 长得像妈妈)",
+        "examples": []
+      }
+    ],
+    "车站": [
+      {
+        "pinyin": "chēzhàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "(bus/train) station; stop (measure word 个)",
+        "examples": []
+      }
+    ],
+    "出": [
+      {
+        "pinyin": "chū",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go out; to come out; to leave (出门, 出去; 他从房间里出来了)",
+        "examples": []
+      },
+      {
+        "pinyin": "chū",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to produce; to put forth (出汗, 出力, 出主意)",
+        "examples": []
+      }
+    ],
+    "床": [
+      {
+        "pinyin": "chuáng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "bed (measure word 张)",
+        "examples": []
+      }
+    ],
+    "出国": [
+      {
+        "pinyin": "chūguó",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go abroad (to leave one's country, esp. to study or travel)",
+        "examples": []
+      }
+    ],
+    "出来": [
+      {
+        "pinyin": "chūlái",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to come out; also a directional complement after a verb (从教室里出来; 我看出来了)",
+        "examples": []
+      }
+    ],
+    "出门": [
+      {
+        "pinyin": "chūmén",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go out; to leave the house",
+        "examples": []
+      }
+    ],
+    "出去": [
+      {
+        "pinyin": "chūqù",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go out (away from the speaker); also a directional complement (我们出去吃饭吧)",
+        "examples": []
+      }
+    ],
+    "词": [
+      {
+        "pinyin": "cí",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "word; term (vocabulary item; 生词)",
+        "examples": []
+      },
+      {
+        "pinyin": "cí",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "lyrics (of a song); ci poetry",
+        "examples": []
+      }
+    ],
+    "次": [
+      {
+        "pinyin": "cì",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "for occurrences of events: 一次, 第一次, 这次会议",
+        "examples": []
+      }
+    ],
+    "从": [
+      {
+        "pinyin": "cóng",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "from (starting point in time or space: 从八点到十点; 从家到学校)",
+        "examples": []
+      }
+    ],
+    "从小": [
+      {
+        "pinyin": "cóngxiǎo",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "from childhood; since one was young (他从小就会游泳)",
+        "examples": []
+      }
+    ],
+    "错": [
+      {
+        "pinyin": "cuò",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "wrong; incorrect (这个字写错了)",
+        "examples": []
+      },
+      {
+        "pinyin": "cuò",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "mistake; fault (认错了人; 是我的错)",
+        "examples": []
+      }
+    ],
+    "打1": [
+      {
+        "pinyin": "dǎ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to hit; to strike (他打了我一下)",
+        "examples": []
+      },
+      {
+        "pinyin": "dǎ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to make (a phone call): 打电话",
+        "examples": []
+      },
+      {
+        "pinyin": "dǎ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to play (a ball game; mahjong): 打篮球, 打乒乓球",
+        "examples": []
+      },
+      {
+        "pinyin": "dǎ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to fetch/buy (water, a ticket); to take (a taxi): 打水, 打车",
+        "examples": []
+      },
+      {
+        "pinyin": "dǎ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to type: 打字",
+        "examples": []
+      }
+    ],
+    "打车": [
+      {
+        "pinyin": "dǎchē",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to take/hail a taxi (also 打的)",
+        "examples": []
+      }
+    ],
+    "打开": [
+      {
+        "pinyin": "dǎkāi",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to open; to turn on (打开门, 打开电视)",
+        "examples": []
+      }
+    ],
+    "但": [
+      {
+        "pinyin": "dàn",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "but; yet (slightly more written/abrupt than 但是)",
+        "examples": []
+      }
+    ],
+    "但是": [
+      {
+        "pinyin": "dànshì",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "but; however",
+        "examples": []
+      }
+    ],
+    "得": [
+      {
+        "pinyin": "de",
+        "pos": [
+          "PARTICLE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "structural particle after a verb, marking a degree or manner complement (跑得快; 说得很好)",
+        "examples": []
+      },
+      {
+        "pinyin": "děi",
+        "pos": [
+          "MODAL_VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to have to; must (我得走了)",
+        "examples": []
+      },
+      {
+        "pinyin": "dé",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "to get; to obtain (a result or score): 得了一百分, 得第一名",
+        "examples": []
+      }
+    ],
+    "地": [
+      {
+        "pinyin": "dì",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "ground; earth; land (地上, 菜地; measure word 块)",
+        "examples": []
+      },
+      {
+        "pinyin": "de",
+        "pos": [
+          "PARTICLE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "adverbial marker before a verb: 慢慢地走, 高兴地说",
+        "examples": []
+      }
+    ],
+    "等1": [
+      {
+        "pinyin": "děng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to wait; to wait for (等一下; 等我一会儿)",
+        "examples": []
+      }
+    ],
+    "点2": [
+      {
+        "pinyin": "diǎn",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to order (food or drinks): 点菜, 点一杯咖啡",
+        "examples": []
+      },
+      {
+        "pinyin": "diǎn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "dot; point; drop (标点; 雨点)",
+        "examples": []
+      }
+    ],
+    "地铁": [
+      {
+        "pinyin": "dìtiě",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "subway; metro (坐地铁)",
+        "examples": []
+      }
+    ],
+    "动": [
+      {
+        "pinyin": "dòng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to move (别动!; 他动了一下)",
+        "examples": []
+      }
+    ],
+    "懂": [
+      {
+        "pinyin": "dǒng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to understand (我懂了; 你懂汉语吗?)",
+        "examples": []
+      }
+    ],
+    "饭馆": [
+      {
+        "pinyin": "fànguǎn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "restaurant (measure word 家/个)",
+        "examples": []
+      }
+    ],
+    "飞": [
+      {
+        "pinyin": "fēi",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to fly (飞机飞得很高; 从北京飞到上海)",
+        "examples": []
+      }
+    ],
+    "高": [
+      {
+        "pinyin": "gāo",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "tall; high (个子高, 价格高)",
+        "examples": []
+      }
+    ],
+    "告诉": [
+      {
+        "pinyin": "gàosu",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to tell (takes double objects: 请告诉我你的名字)",
+        "examples": []
+      }
+    ],
+    "高中": [
+      {
+        "pinyin": "gāozhōng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "senior high school (读高中)",
+        "examples": []
+      }
+    ],
+    "跟": [
+      {
+        "pinyin": "gēn",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "with (introduces companion or object of action: 跟朋友一起去; 我跟你说)",
+        "examples": []
+      },
+      {
+        "pinyin": "gēn",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "and (joining nouns, informal: 我跟他都喜欢打球)",
+        "examples": []
+      }
+    ],
+    "个子": [
+      {
+        "pinyin": "gèzi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "height; stature (个子高/矮)",
+        "examples": []
+      }
+    ],
+    "公交车": [
+      {
+        "pinyin": "gōngjiāochē",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "bus (坐公交车; also 公共汽车)",
+        "examples": []
+      }
+    ],
+    "过": [
+      {
+        "pinyin": "guò",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to cross; to pass through (过马路, 过桥)",
+        "examples": []
+      },
+      {
+        "pinyin": "guò",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to spend (time); to celebrate (a festival): 过生日, 过年, 过周末",
+        "examples": []
+      },
+      {
+        "pinyin": "guo",
+        "pos": [
+          "PARTICLE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "experiential aspect particle after a verb, neutral tone: 我去过中国; 你吃过北京烤鸭吗?",
+        "examples": []
+      }
+    ],
+    "过来": [
+      {
+        "pinyin": "guòlái",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to come over (toward the speaker); also a directional complement (你过来一下; 他走过来)",
+        "examples": []
+      }
+    ],
+    "过年": [
+      {
+        "pinyin": "guònián",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to celebrate the New Year (esp. the Spring Festival)",
+        "examples": []
+      }
+    ],
+    "过去1": [
+      {
+        "pinyin": "guòqu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "the past; former times (在过去, 过去的事)",
+        "examples": []
+      },
+      {
+        "pinyin": "guòqu",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go over (away from the speaker); directional complement (他跑过去了)",
+        "examples": []
+      }
+    ],
+    "还是": [
+      {
+        "pinyin": "háishi",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "or (in alternative questions: 你喝茶还是咖啡?; 去还是不去?)",
+        "examples": []
+      },
+      {
+        "pinyin": "háishi",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "still; all the same (现在还是很热; 他还是没来)",
+        "examples": []
+      }
+    ],
+    "黑色": [
+      {
+        "pinyin": "hēisè",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "black (color)",
+        "examples": []
+      }
+    ],
+    "红茶": [
+      {
+        "pinyin": "hóngchá",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "black tea (literally 'red tea')",
+        "examples": []
+      }
+    ],
+    "红色": [
+      {
+        "pinyin": "hóngsè",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "red (color)",
+        "examples": []
+      }
+    ],
+    "后面": [
+      {
+        "pinyin": "hòumian",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "back; behind; rear (location: 教室后面, 楼后面)",
+        "examples": []
+      },
+      {
+        "pinyin": "hòumian",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "later; afterwards (后面的课, 后面几页)",
+        "examples": []
+      }
+    ],
+    "画": [
+      {
+        "pinyin": "huà",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to draw; to paint (画一个圆圈)",
+        "examples": []
+      },
+      {
+        "pinyin": "huà",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "drawing; painting; picture (measure word 张/幅)",
+        "examples": []
+      }
+    ],
+    "花1": [
+      {
+        "pinyin": "huā",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "flower; blossom (measure word 朵/束)",
+        "examples": []
+      }
+    ],
+    "花2": [
+      {
+        "pinyin": "huā",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to spend (money or time): 花了五百块, 花了两个小时",
+        "examples": []
+      }
+    ],
+    "坏": [
+      {
+        "pinyin": "huài",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "bad; broken; spoiled (电视坏了; 坏消息)",
+        "examples": []
+      },
+      {
+        "pinyin": "huài",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "bad (of people or behavior); naughty (坏人, 坏习惯)",
+        "examples": []
+      }
+    ],
+    "回来": [
+      {
+        "pinyin": "huílai",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to come back (toward the speaker); directional complement (爸爸回来了; 把书拿回来)",
+        "examples": []
+      }
+    ],
+    "回去": [
+      {
+        "pinyin": "huíqu",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go back (away from the speaker); directional complement (我们回去吧; 把书送回去)",
+        "examples": []
+      }
+    ],
+    "间": [
+      {
+        "pinyin": "jiān",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "for rooms: 一间教室, 一间卧室",
+        "examples": []
+      }
+    ],
+    "教": [
+      {
+        "pinyin": "jiāo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to teach (教汉语, 教我们英语)",
+        "examples": []
+      },
+      {
+        "pinyin": "jiào",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "to make sb do (使/让, in 使令 compounds like 教人佩服)",
+        "examples": []
+      }
+    ],
+    "教室": [
+      {
+        "pinyin": "jiàoshì",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "classroom (measure word 间)",
+        "examples": []
+      }
+    ],
+    "机场": [
+      {
+        "pinyin": "jīchǎng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "airport (measure word 个)",
+        "examples": []
+      }
+    ],
+    "记得": [
+      {
+        "pinyin": "jìde",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to remember (记得告诉我; 你记得他的名字吗? negative is 不记得)",
+        "examples": []
+      }
+    ],
+    "介绍": [
+      {
+        "pinyin": "jièshào",
+        "pos": [
+          "VERB",
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to introduce; introduction (介绍一个朋友给我; 自我介绍)",
+        "examples": []
+      }
+    ],
+    "进": [
+      {
+        "pinyin": "jìn",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to enter; to go in (走进教室; 请进!)",
+        "examples": []
+      }
+    ],
+    "近": [
+      {
+        "pinyin": "jìn",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "near; close (in distance; 我家离学校很近)",
+        "examples": []
+      }
+    ],
+    "经常": [
+      {
+        "pinyin": "jīngcháng",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "often; frequently (经常迟到)",
+        "examples": []
+      }
+    ],
+    "进来": [
+      {
+        "pinyin": "jìnlái",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to come in (toward the speaker); directional complement (请进来; 他跑了进来)",
+        "examples": []
+      }
+    ],
+    "进去": [
+      {
+        "pinyin": "jìnqù",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go in (away from the speaker); directional complement (他走进去了)",
+        "examples": []
+      }
+    ],
+    "机票": [
+      {
+        "pinyin": "jīpiào",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "plane ticket (measure word 张)",
+        "examples": []
+      }
+    ],
+    "就": [
+      {
+        "pinyin": "jiù",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "right away; as early as (我马上就来; 他七点就到了)",
+        "examples": []
+      },
+      {
+        "pinyin": "jiù",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "only; just (他就一个朋友; 就吃了两块)",
+        "examples": []
+      },
+      {
+        "pinyin": "jiù",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "then (linking two clauses: 如果…就…; 你来, 我就走)",
+        "examples": []
+      },
+      {
+        "pinyin": "jiù",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "emphasis before a predicate, 'precisely/exactly': 这就是我的书; 我就是没看见",
+        "examples": []
+      }
+    ],
+    "酒店": [
+      {
+        "pinyin": "jiǔdiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "hotel (measure word 家/个)",
+        "examples": []
+      }
+    ],
+    "咖啡": [
+      {
+        "pinyin": "kāfēi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "coffee (一杯咖啡; 咖啡店)",
+        "examples": []
+      }
+    ],
+    "开始": [
+      {
+        "pinyin": "kāishǐ",
+        "pos": [
+          "VERB",
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to begin; to start; beginning (开始上课; 从…开始)",
+        "examples": []
+      }
+    ],
+    "开学": [
+      {
+        "pinyin": "kāixué",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "(of a new school term) to begin; school starts (九月一号开学)",
+        "examples": []
+      }
+    ],
+    "考": [
+      {
+        "pinyin": "kǎo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to give/set an exam (of a teacher: 老师考我们生词)",
+        "examples": []
+      },
+      {
+        "pinyin": "kǎo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to take an exam/test in (考汉语, 考大学)",
+        "examples": []
+      }
+    ],
+    "考试": [
+      {
+        "pinyin": "kǎoshì",
+        "pos": [
+          "VERB",
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to take an examination; exam, test (明天考数学; 期末考试)",
+        "examples": []
+      }
+    ],
+    "可能": [
+      {
+        "pinyin": "kěnéng",
+        "pos": [
+          "MODAL_VERB",
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "may; might; possibly (明天可能下雨; 他可能不来了)",
+        "examples": []
+      },
+      {
+        "pinyin": "kěnéng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "possibility (有两种可能)",
+        "examples": []
+      }
+    ],
+    "快": [
+      {
+        "pinyin": "kuài",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "fast; quick (车开得太快了)",
+        "examples": []
+      },
+      {
+        "pinyin": "kuài",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "soon; before long (天快黑了; 他快回来了)",
+        "examples": []
+      },
+      {
+        "pinyin": "kuài",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "at once; hurriedly (快走!; 快去快回)",
+        "examples": []
+      }
+    ],
+    "快乐": [
+      {
+        "pinyin": "kuàilè",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "happy; joyful (生日快乐!; 他们过得很快乐)",
+        "examples": []
+      }
+    ],
+    "快要": [
+      {
+        "pinyin": "kuàiyào",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "about to; on the verge of (火车快要开了)",
+        "examples": []
+      }
+    ],
+    "裤子": [
+      {
+        "pinyin": "kùzi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "trousers; pants (measure word 条)",
+        "examples": []
+      }
+    ],
+    "篮球": [
+      {
+        "pinyin": "lánqiú",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "basketball (打篮球)",
+        "examples": []
+      }
+    ],
+    "累": [
+      {
+        "pinyin": "lèi",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "tired; fatigued (走了一天, 我太累了)",
+        "examples": []
+      }
+    ],
+    "离": [
+      {
+        "pinyin": "lí",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "away from (distance): 离学校很远; 离家五百米",
+        "examples": []
+      }
+    ],
+    "里面": [
+      {
+        "pinyin": "lǐmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "inside; interior (房间里面; 里面有很多人)",
+        "examples": []
+      }
+    ],
+    "楼": [
+      {
+        "pinyin": "lóu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "building with more than one floor; floor; storey (教学楼, 二楼)",
+        "examples": []
+      },
+      {
+        "pinyin": "lóu",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "used in floor numbering: 一楼, 二楼, 三楼",
+        "examples": []
+      }
+    ],
+    "路": [
+      {
+        "pinyin": "lù",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "road; way; route (这条路; 问路; measure word 条)",
+        "examples": []
+      },
+      {
+        "pinyin": "lù",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "journey; distance covered (走了一天的路)",
+        "examples": []
+      }
+    ],
+    "绿茶": [
+      {
+        "pinyin": "lǜchá",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "green tea",
+        "examples": []
+      }
+    ],
+    "绿色": [
+      {
+        "pinyin": "lǜsè",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "green (color)",
+        "examples": []
+      }
+    ],
+    "路上": [
+      {
+        "pinyin": "lùshang",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "on the road; on the way (路上小心; 路上花了两个小时)",
+        "examples": []
+      }
+    ],
+    "旅游": [
+      {
+        "pinyin": "lǚyóu",
+        "pos": [
+          "VERB",
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to travel; to tour; tourism (去云南旅游; 旅游景点)",
+        "examples": []
+      }
+    ],
+    "慢": [
+      {
+        "pinyin": "màn",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "slow (他说得很慢; 慢走!)",
+        "examples": []
+      }
+    ],
+    "每": [
+      {
+        "pinyin": "měi",
+        "pos": [
+          "PRONOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "every; each (每个人; 每天早上; 每两年一次)",
+        "examples": []
+      }
+    ],
+    "没意思": [
+      {
+        "pinyin": "méi yìsi",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": "negative judgment, informal",
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "boring; uninteresting; no fun (这个电影真没意思)",
+        "examples": []
+      }
+    ],
+    "门": [
+      {
+        "pinyin": "mén",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "door; gate; entrance (开门, 关门; measure word 扇)",
+        "examples": []
+      },
+      {
+        "pinyin": "mén",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "measure-like use for courses/subjects: 一门课, 一门外语",
+        "examples": []
+      }
+    ],
+    "门口": [
+      {
+        "pinyin": "ménkǒu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "doorway; entrance; at the door (在门口等我)",
+        "examples": []
+      }
+    ],
+    "门票": [
+      {
+        "pinyin": "ménpiào",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "admission ticket; entrance fee (买门票, 门票五十块)",
+        "examples": []
+      }
+    ],
+    "面1": [
+      {
+        "pinyin": "miàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "noodles (measure word 碗/份: 一碗面)",
+        "examples": []
+      },
+      {
+        "pinyin": "miàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "flour; powder (面粉)",
+        "examples": []
+      }
+    ],
+    "名": [
+      {
+        "pinyin": "míng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "name (in compounds: 姓名, 名字; 有名的)",
+        "examples": []
+      },
+      {
+        "pinyin": "míng",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "for people (formal): 第一名, 三名学生, 一名医生",
+        "examples": []
+      }
+    ],
+    "拿": [
+      {
+        "pinyin": "ná",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to take; to hold; to pick up (拿一本书; 把包拿过来)",
+        "examples": []
+      },
+      {
+        "pinyin": "ná",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to take/get (by paying or fetching): 拿行李, 拿药",
+        "examples": []
+      }
+    ],
+    "奶茶": [
+      {
+        "pinyin": "nǎichá",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "milk tea (一杯奶茶)",
+        "examples": []
+      }
+    ],
+    "奶奶": [
+      {
+        "pinyin": "nǎinai",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "paternal grandmother (measure word 位)",
+        "examples": []
+      }
+    ],
+    "那么": [
+      {
+        "pinyin": "nàme",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "so; to such a degree (今天那么忙!; 没有那么难)",
+        "examples": []
+      },
+      {
+        "pinyin": "nàme",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "then; in that case (那么我们明天见)",
+        "examples": []
+      }
+    ],
+    "男孩儿": [
+      {
+        "pinyin": "nánháir",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "boy (measure word 个)",
+        "examples": []
+      }
+    ],
+    "那样": [
+      {
+        "pinyin": "nàyàng",
+        "pos": [
+          "PRONOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "like that; such (他那样的人; 为什么那样做?)",
+        "examples": []
+      }
+    ],
+    "鸟": [
+      {
+        "pinyin": "niǎo",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "bird (树上有一只鸟; measure word 只)",
+        "examples": []
+      }
+    ],
+    "女孩儿": [
+      {
+        "pinyin": "nǚháir",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "girl (measure word 个)",
+        "examples": []
+      }
+    ],
+    "旁边": [
+      {
+        "pinyin": "pángbiān",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "side; beside; nearby (学校旁边有一个公园)",
+        "examples": []
+      }
+    ],
+    "跑": [
+      {
+        "pinyin": "pǎo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to run; to jog (跑得很快; 他跑到车站去了)",
+        "examples": []
+      },
+      {
+        "pinyin": "pǎo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to run (an errand); to go to (口语: 跑了一趟银行)",
+        "examples": []
+      }
+    ],
+    "跑步": [
+      {
+        "pinyin": "pǎobù",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to run; to jog (去公园跑步; separable 离合词: 跑了一个小时步)",
+        "examples": []
+      }
+    ],
+    "票": [
+      {
+        "pinyin": "piào",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "ticket (车票, 门票; measure word 张)",
+        "examples": []
+      }
+    ],
+    "前面": [
+      {
+        "pinyin": "qiánmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "front; ahead (location: 教室前面, 车前面)",
+        "examples": []
+      },
+      {
+        "pinyin": "qiánmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "above; earlier (in a text: 前面几课)",
+        "examples": []
+      }
+    ],
+    "起来": [
+      {
+        "pinyin": "qǐlai",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to get up; to rise; directional complement (七点起来; 从床上起来; 他站起来了)",
+        "examples": []
+      }
+    ],
+    "晴": [
+      {
+        "pinyin": "qíng",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "clear; sunny (of weather: 今天天气很晴 / 晴天)",
+        "examples": []
+      }
+    ],
+    "球": [
+      {
+        "pinyin": "qiú",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "ball; sphere (踢球, 打球; measure word 个)",
+        "examples": []
+      }
+    ],
+    "妻子": [
+      {
+        "pinyin": "qīzi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "wife (measure word 位; more formal/plain than 太太, 爱人)",
+        "examples": []
+      }
+    ],
+    "让": [
+      {
+        "pinyin": "ràng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to let; to allow; to make (sb do sth) (妈妈不让我去; 让他等一下)",
+        "examples": []
+      },
+      {
+        "pinyin": "ràng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to give way; to yield (让座)",
+        "examples": []
+      }
+    ],
+    "肉": [
+      {
+        "pinyin": "ròu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "meat (牛肉, 羊肉; measure word 斤/块)",
+        "examples": []
+      }
+    ],
+    "商场": [
+      {
+        "pinyin": "shāngchǎng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "shopping mall; department store (measure word 个/家)",
+        "examples": []
+      }
+    ],
+    "上来": [
+      {
+        "pinyin": "shànglái",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to come up (toward the speaker); directional complement (他从楼下上来了; 拿上来)",
+        "examples": []
+      }
+    ],
+    "上面": [
+      {
+        "pinyin": "shàngmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "top; above; on top (书在桌子上面; 上面放着两本书)",
+        "examples": []
+      },
+      {
+        "pinyin": "shàngmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "above-mentioned; higher level (上面的意思, 上面写的内容)",
+        "examples": []
+      }
+    ],
+    "上去": [
+      {
+        "pinyin": "shàngqù",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go up (away from the speaker); directional complement (他上楼去了; 把东西送上去)",
+        "examples": []
+      }
+    ],
+    "上网": [
+      {
+        "pinyin": "shàngwǎng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go online; to surf the internet (用手机上网)",
+        "examples": []
+      }
+    ],
+    "生日": [
+      {
+        "pinyin": "shēngrì",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "birthday (过生日; 生日快乐!; measure word 个)",
+        "examples": []
+      }
+    ],
+    "身体": [
+      {
+        "pinyin": "shēntǐ",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "body; health (身体健康; 他身体很好)",
+        "examples": []
+      }
+    ],
+    "时": [
+      {
+        "pinyin": "shí",
+        "pos": [
+          "NOUN"
+        ],
+        "register": "FORMAL",
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "time; occasion (书面, in compounds: 小时, 有时, 此时)",
+        "examples": []
+      }
+    ],
+    "事情": [
+      {
+        "pinyin": "shìqing",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "matter; thing; affair (一件事情; 有什么事情吗?)",
+        "examples": []
+      }
+    ],
+    "手": [
+      {
+        "pinyin": "shǒu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "hand (洗手; measure words 只/双)",
+        "examples": []
+      }
+    ],
+    "手表": [
+      {
+        "pinyin": "shǒubiǎo",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "wristwatch (measure word 块/只)",
+        "examples": []
+      }
+    ],
+    "书包": [
+      {
+        "pinyin": "shūbāo",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "schoolbag; book bag (measure word 个)",
+        "examples": []
+      }
+    ],
+    "舒服": [
+      {
+        "pinyin": "shūfu",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "comfortable (沙发很舒服; 我有点儿不舒服)",
+        "examples": []
+      }
+    ],
+    "送": [
+      {
+        "pinyin": "sòng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to give (as a present); to present (送朋友一个礼物)",
+        "examples": []
+      },
+      {
+        "pinyin": "sòng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to see sb off; to escort; to deliver (送我到车站; 送孩子上学; 送外卖)",
+        "examples": []
+      }
+    ],
+    "虽然": [
+      {
+        "pinyin": "suīrán",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "although; though (虽然…但是…: 虽然很累, 但是很快乐)",
+        "examples": []
+      }
+    ],
+    "所以": [
+      {
+        "pinyin": "suǒyǐ",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "so; therefore; as a result (他病了, 所以没来上课)",
+        "examples": []
+      }
+    ],
+    "疼": [
+      {
+        "pinyin": "téng",
+        "pos": [
+          "ADJECTIVE",
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to hurt; painful; to ache (头很疼; 我腿疼)",
+        "examples": []
+      },
+      {
+        "pinyin": "téng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to love dearly; to dote on (奶奶最疼我)",
+        "examples": []
+      }
+    ],
+    "题": [
+      {
+        "pinyin": "tí",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "question (on a test); problem; exercise (这道题; 考试题; measure word 道)",
+        "examples": []
+      }
+    ],
+    "踢": [
+      {
+        "pinyin": "tī",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to kick (踢球, 踢了一下门)",
+        "examples": []
+      }
+    ],
+    "条": [
+      {
+        "pinyin": "tiáo",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "for long, narrow things: 一条路, 一条裤子, 一条河, 一条狗",
+        "examples": []
+      }
+    ],
+    "跳舞": [
+      {
+        "pinyin": "tiàowǔ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to dance (她喜欢跳舞; separable: 跳了一个晚上的舞)",
+        "examples": []
+      }
+    ],
+    "头": [
+      {
+        "pinyin": "tóu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "head (低头, 点头; measure word 个)",
+        "examples": []
+      },
+      {
+        "pinyin": "tóu",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "first; leading (头一次, 头两名); also for some animals: 一头牛",
+        "examples": []
+      }
+    ],
+    "外国": [
+      {
+        "pinyin": "wàiguó",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "foreign country; abroad (外国朋友; 去外国旅行)",
+        "examples": []
+      }
+    ],
+    "外面": [
+      {
+        "pinyin": "wàimiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "outside; out (外面很冷; 他在外面等我们)",
+        "examples": []
+      }
+    ],
+    "完": [
+      {
+        "pinyin": "wán",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to finish; to complete (作业做完了; 吃完饭)",
+        "examples": []
+      },
+      {
+        "pinyin": "wán",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "used up; finished; over (铅笔用完了; 水快完了)",
+        "examples": []
+      }
+    ],
+    "万": [
+      {
+        "pinyin": "wàn",
+        "pos": [
+          "NUMBER_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "ten thousand (一万人, 一万块; also 'a huge number' in 万水千山 etc.)",
+        "examples": []
+      }
+    ],
+    "忘": [
+      {
+        "pinyin": "wàng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to forget (别忘了带伞; 我忘了他的名字)",
+        "examples": []
+      }
+    ],
+    "往": [
+      {
+        "pinyin": "wǎng",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "toward (direction of movement: 往前走, 往东, 往车站去)",
+        "examples": []
+      }
+    ],
+    "网上": [
+      {
+        "pinyin": "wǎngshàng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "on the internet; online (网上购物, 网上查资料)",
+        "examples": []
+      }
+    ],
+    "位": [
+      {
+        "pinyin": "wèi",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "polite measure word for people: 一位老师, 两位客人",
+        "examples": []
+      }
+    ],
+    "为什么": [
+      {
+        "pinyin": "wèishénme",
+        "pos": [
+          "PRONOUN",
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "why (你为什么迟到?; 这就是为什么…)",
+        "examples": []
+      }
+    ],
+    "洗": [
+      {
+        "pinyin": "xǐ",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to wash (洗手, 洗衣服, 洗碗)",
+        "examples": []
+      }
+    ],
+    "下来": [
+      {
+        "pinyin": "xiàlai",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to come down; directional complement (他从楼上下来了; 把书拿下来)",
+        "examples": []
+      }
+    ],
+    "下面": [
+      {
+        "pinyin": "xiàmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "below; underneath (桌子下面, 下面这个字)",
+        "examples": []
+      },
+      {
+        "pinyin": "xiàmiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "the following; below-mentioned (下面请看第二课)",
+        "examples": []
+      }
+    ],
+    "笑": [
+      {
+        "pinyin": "xiào",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to laugh (他笑得很开心)",
+        "examples": []
+      },
+      {
+        "pinyin": "xiào",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to smile (她笑着对我说)",
+        "examples": []
+      },
+      {
+        "pinyin": "xiào",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to laugh at; to mock (别人笑他, 不要笑我)",
+        "examples": []
+      }
+    ],
+    "小孩儿": [
+      {
+        "pinyin": "xiǎoháir",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "child; kid (measure word 个)",
+        "examples": []
+      }
+    ],
+    "小时候": [
+      {
+        "pinyin": "xiǎoshíhou",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "childhood; when one was little (我小时候住在农村)",
+        "examples": []
+      }
+    ],
+    "下去": [
+      {
+        "pinyin": "xiàqù",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to go down (away from speaker); directional complement, also 'carry on' (他下楼去了; 说下去!; 坚持下去)",
+        "examples": []
+      }
+    ],
+    "姓": [
+      {
+        "pinyin": "xìng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to be surnamed (你姓什么? 我姓王)",
+        "examples": []
+      },
+      {
+        "pinyin": "xìng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "surname; family name (他的姓很难写)",
+        "examples": []
+      }
+    ],
+    "姓名": [
+      {
+        "pinyin": "xìngmíng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": "FORMAL",
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "full name (surname and given name; 请写您的姓名)",
+        "examples": []
+      }
+    ],
+    "洗手间": [
+      {
+        "pinyin": "xǐshǒujiān",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "toilet; restroom (polite/euphemistic; 请问洗手间在哪儿?)",
+        "examples": []
+      }
+    ],
+    "希望": [
+      {
+        "pinyin": "xīwàng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to hope; to wish (我希望你能来)",
+        "examples": []
+      },
+      {
+        "pinyin": "xīwàng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "hope; wish (对未来的希望)",
+        "examples": []
+      }
+    ],
+    "眼睛": [
+      {
+        "pinyin": "yǎnjing",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "eye (measure word 只/双)",
+        "examples": []
+      }
+    ],
+    "颜色": [
+      {
+        "pinyin": "yánsè",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "color (什么颜色? 红颜色)",
+        "examples": []
+      }
+    ],
+    "药": [
+      {
+        "pinyin": "yào",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "medicine; drug (吃药; 中药, 西药; measure word 种/片)",
+        "examples": []
+      }
+    ],
+    "药店": [
+      {
+        "pinyin": "yàodiàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "pharmacy; drugstore (measure word 家/个)",
+        "examples": []
+      }
+    ],
+    "爷爷": [
+      {
+        "pinyin": "yéye",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "paternal grandfather (measure word 位)",
+        "examples": []
+      }
+    ],
+    "一会儿": [
+      {
+        "pinyin": "yīhuìr",
+        "pos": [
+          "NOUN",
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "a moment; a little while (等一会儿; base tone yī noted: written yīhuìr, pronounced yíhuìr)",
+        "examples": []
+      }
+    ],
+    "已经": [
+      {
+        "pinyin": "yǐjīng",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "already (他已经走了; 已经十点了)",
+        "examples": []
+      }
+    ],
+    "阴": [
+      {
+        "pinyin": "yīn",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "overcast; cloudy (of weather: 今天是阴天)",
+        "examples": []
+      }
+    ],
+    "因为": [
+      {
+        "pinyin": "yīnwèi",
+        "pos": [
+          "CONJUNCTION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "because (因为下雨, 所以我没去)",
+        "examples": []
+      },
+      {
+        "pinyin": "yīnwèi",
+        "pos": [
+          "PREPOSITION"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "because of (noun phrase: 因为你, 我们都迟到了)",
+        "examples": []
+      }
+    ],
+    "一起": [
+      {
+        "pinyin": "yīqǐ",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "together (base tone yī noted: 我们一起去; written yīqǐ, pronounced yìqǐ)",
+        "examples": []
+      }
+    ],
+    "意思": [
+      {
+        "pinyin": "yìsi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "meaning; idea (这个词是什么意思?; 有意思 interesting, 没意思 boring)",
+        "examples": []
+      }
+    ],
+    "游": [
+      {
+        "pinyin": "yóu",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to swim (游得很快; 游了一小时)",
+        "examples": []
+      }
+    ],
+    "右": [
+      {
+        "pinyin": "yòu",
+        "pos": [
+          "NOUN",
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "right (side) (右手, 右边)",
+        "examples": []
+      }
+    ],
+    "有意思": [
+      {
+        "pinyin": "yǒu yìsi",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": "positive, informal",
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "interesting; fun; amusing (这个人很有意思)",
+        "examples": []
+      }
+    ],
+    "右边": [
+      {
+        "pinyin": "yòubian",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "right side; to the right (邮局在右边)",
+        "examples": []
+      }
+    ],
+    "有时（候）": [
+      {
+        "pinyin": "yǒushí(hou)",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "sometimes (有时候我走路去上学; written yǒushí(hou) per the headword, read yǒu shíhou)",
+        "examples": []
+      }
+    ],
+    "游泳": [
+      {
+        "pinyin": "yóuyǒng",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to swim (去游泳; separable: 游了两次泳)",
+        "examples": []
+      }
+    ],
+    "鱼": [
+      {
+        "pinyin": "yú",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "fish (measure word 条)",
+        "examples": []
+      }
+    ],
+    "远": [
+      {
+        "pinyin": "yuǎn",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "far; distant (离这儿很远)",
+        "examples": []
+      }
+    ],
+    "运动": [
+      {
+        "pinyin": "yùndòng",
+        "pos": [
+          "VERB",
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to work out; to do sports; sports; exercise (运动一下; 爱运动; 体育运动)",
+        "examples": []
+      },
+      {
+        "pinyin": "yùndòng",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": null,
+        "meaning": "movement (social or political: 五四运动)",
+        "examples": []
+      }
+    ],
+    "站1": [
+      {
+        "pinyin": "zhàn",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to stand (请站在这儿; 站了很久)",
+        "examples": []
+      },
+      {
+        "pinyin": "zhàn",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "station; stop (公共汽车站, 火车站; measure word 个)",
+        "examples": []
+      }
+    ],
+    "丈夫": [
+      {
+        "pinyin": "zhàngfu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "husband (measure word 位; plain/neutral register)",
+        "examples": []
+      }
+    ],
+    "着": [
+      {
+        "pinyin": "zhe",
+        "pos": [
+          "PARTICLE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "aspect particle marking an ongoing state or attached action, neutral tone: 门开着; 他坐在那儿看电视; 拿着书",
+        "examples": []
+      },
+      {
+        "pinyin": "zháo",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to touch; to come into contact with (着火, 睡不着 — as result complement: 睡不着, 找不着)",
+        "examples": []
+      }
+    ],
+    "这么": [
+      {
+        "pinyin": "zhème",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "so; this way; to this degree (这么大的雨!; 你怎么这么高兴?; 像这么写)",
+        "examples": []
+      }
+    ],
+    "正": [
+      {
+        "pinyin": "zhèng",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "precisely (是): 他正是我要找的人; 正在 in progress: 他正在打电话",
+        "examples": []
+      },
+      {
+        "pinyin": "zhèng",
+        "pos": [
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "upright; straight; main (正门, 正前方; also 'exactly at': 正十二点)",
+        "examples": []
+      }
+    ],
+    "这样": [
+      {
+        "pinyin": "zhèyàng",
+        "pos": [
+          "PRONOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "this way; like this; such (这样做不对; 这样的人)",
+        "examples": []
+      }
+    ],
+    "周": [
+      {
+        "pinyin": "zhōu",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "week (这一周, 周末)",
+        "examples": []
+      },
+      {
+        "pinyin": "zhōu",
+        "pos": [
+          "MEASURE_WORD"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "for weeks: 一周, 第一周",
+        "examples": []
+      }
+    ],
+    "准备": [
+      {
+        "pinyin": "zhǔnbèi",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to prepare; to get ready (准备考试; 准备好了)",
+        "examples": []
+      },
+      {
+        "pinyin": "zhǔnbèi",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "preparation (做准备工作)",
+        "examples": []
+      }
+    ],
+    "自己": [
+      {
+        "pinyin": "zìjǐ",
+        "pos": [
+          "PRONOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "oneself; one's own (自己做饭; 我自己的房间)",
+        "examples": []
+      },
+      {
+        "pinyin": "zìjǐ",
+        "pos": [
+          "PRONOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "alone; by oneself (他自己在家; 自己去)",
+        "examples": []
+      }
+    ],
+    "走": [
+      {
+        "pinyin": "zǒu",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to walk (他走得很快)",
+        "examples": []
+      },
+      {
+        "pinyin": "zǒu",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to leave; to go (我先走了; 他走了三年了 — passed away, euphemism)",
+        "examples": []
+      }
+    ],
+    "走路": [
+      {
+        "pinyin": "zǒulù",
+        "pos": [
+          "VERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "to walk; to go on foot (我每天走路去上班)",
+        "examples": []
+      }
+    ],
+    "最": [
+      {
+        "pinyin": "zuì",
+        "pos": [
+          "ADVERB"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "most; -est (最高, 最好, 最喜欢的)",
+        "examples": []
+      }
+    ],
+    "左": [
+      {
+        "pinyin": "zuǒ",
+        "pos": [
+          "NOUN",
+          "ADJECTIVE"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "left (side) (左手, 左边)",
+        "examples": []
+      }
+    ],
+    "左边": [
+      {
+        "pinyin": "zuǒbian",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "left side; to the left (银行在左边)",
+        "examples": []
+      }
+    ],
+    "足球": [
+      {
+        "pinyin": "zúqiú",
+        "pos": [
+          "NOUN"
+        ],
+        "register": null,
+        "region": null,
+        "connotation": null,
+        "near_synonyms": null,
+        "hsk_level": 2,
+        "meaning": "soccer; football (踢足球)",
+        "examples": []
+      }
+    ]
+  }
+}
