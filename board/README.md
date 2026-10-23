@@ -32,8 +32,9 @@ An agent with the Jira connector runs `SEARCH_ISSUES` (project SHU, ~100 max),
 saves the JSON to a temp file, and runs the script. Cards and INDEX regenerate
 in place. Refuses to make sense while cards are dirty — check first.
 
-Only Epics are skipped (Epics live only in Jira); every other ticket gets a
-card, including `Ideas` ones. Cards dropped from the pull result are deleted,
+Only Epics and `Done` tickets are skipped (Epics live only in Jira; Done
+tickets live only in Jira history). Every other ticket gets a card, including
+`Ideas` ones. Cards dropped from the pull result are deleted,
 except dirty ones, which are kept so their pending ops survive to the flush.
 
 ## Flush (push local writes to Jira)

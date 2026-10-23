@@ -4,7 +4,8 @@ import json, sys, os
 
 data = json.load(open(sys.argv[1]))
 issues = [it for it in data["issues"]
-          if (it.get("issue_type") or {}).get("name") != "Epic"]
+          if (it.get("issue_type") or {}).get("name") != "Epic"
+          and (it.get("status") or {}).get("name") != "Done"]
 keys = {it["key"] for it in issues}
 board = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.makedirs(board, exist_ok=True)
