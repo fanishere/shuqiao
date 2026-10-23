@@ -65,6 +65,19 @@ def main(path, level, examples_required=False):
             ex = s.get("examples")
             if not isinstance(ex, list): err(w, f"sense {i} examples not list")
             elif examples_required and not ex: err(w, f"sense {i} examples empty but required")
+            for j, e in enumerate(ex or []):
+                if set(e.keys()) != {"hanzi","pinyin","english"}: err(w, f"sense {i} ex {j} bad keys {list(e.keys())}")
+                hz, py = e.get("hanzi",""), e.get("pinyin","")
+                n2, _ = count_syllables(py)
+                h2 = hanzi_len(hz)
+                if n2 != h2 and n2 != h2 - hz.count("儿"):
+                    err(w, f"sense {i} ex {j} syllables {n2} vs chars {h2}: {hz} / {py}")
+                base = re.sub(r'[\d（）()]','', w)
+                variants = {base}
+                if "（" in w:  # e.g. 没（有）→ 没, 没有; 有（一）点儿→ 有点儿, 有一点儿
+                    variants |= {w.replace("（","").replace("）",""), re.sub(r"（.*?）","",w)}
+                if not any(v in hz for v in variants):
+                    err(w, f"sense {i} ex {j} missing headword: {hz}")
             key = (py, tuple(pos or []), m)
             if key in seen: err(w, f"sense {i} duplicate of earlier sense")
             seen.add(key)
