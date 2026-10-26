@@ -1,4 +1,12 @@
 services:
+  api:
+    build: .
+    ports:
+      - "8010:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
   db:
     image: postgres:18
     environment:
