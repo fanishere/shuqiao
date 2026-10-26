@@ -251,6 +251,34 @@ class StartupSweepTest(AuthTestCase):
         self.assertEqual(n, 0)
 
 
+class MigrationTest(AuthTestCase):
+    def test_schema_migrations_records_auth_ddl(self) -> None:
+        with self.auth.db() as conn:
+            rows = {
+                r[0]
+                for r in conn.execute("SELECT filename FROM schema_migrations")
+            }
+        self.assertIn("0001_concepts.sql", rows)
+        self.assertIn("0002_create_auth_tables.sql", rows)
+        with self.auth.db() as conn:
+            conn.execute(
+                "SELECT 1 FROM users LIMIT 0"
+            )  # tables exist, not just registry rows
+
+    def test_second_startup_applies_nothing_new(self) -> None:
+        with self.auth.db() as conn:
+            before = conn.execute(
+                "SELECT count(*), max(applied_at) FROM schema_migrations"
+            ).fetchone()
+        self.auth.close_pool()
+        self.auth.init_pool()
+        with self.auth.db() as conn:
+            after = conn.execute(
+                "SELECT count(*), max(applied_at) FROM schema_migrations"
+            ).fetchone()
+        self.assertEqual(before, after)
+
+
 class LogoutTest(AuthTestCase):
     def test_logout_revokes_refresh_token(self) -> None:
         self.signup()

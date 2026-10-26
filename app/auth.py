@@ -15,10 +15,12 @@ from urllib.parse import quote
 
 import jwt
 from fastapi import APIRouter, HTTPException
-from pwdlib import PasswordHash
 from psycopg import errors
 from psycopg_pool import ConnectionPool
+from pwdlib import PasswordHash
 from pydantic import BaseModel, Field
+
+from app import migrations
 
 logger = logging.getLogger("shuqiao.auth")
 
@@ -48,20 +50,6 @@ password_hash = PasswordHash.recommended()
 # op on both paths and response timing does not reveal registered usernames.
 _dummy_hash = password_hash.hash(secrets.token_urlsafe(16))
 
-_SCHEMA = """
-CREATE TABLE IF NOT EXISTS users (
-    username TEXT PRIMARY KEY,
-    password_hash TEXT NOT NULL,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-CREATE TABLE IF NOT EXISTS refresh_tokens (
-    token_hash TEXT PRIMARY KEY,
-    username TEXT NOT NULL REFERENCES users (username) ON DELETE CASCADE,
-    issued_at TIMESTAMPTZ NOT NULL,
-    expires_at TIMESTAMPTZ NOT NULL
-);
-"""
-
 router = APIRouter(prefix="/auth")
 
 _pool: ConnectionPool | None = None
@@ -71,7 +59,7 @@ def init_pool() -> None:
     global _pool
     _pool = ConnectionPool(_database_url(), open=True, check=ConnectionPool.check_connection)
     with _pool.connection() as conn:
-        conn.execute(_SCHEMA)
+        migrations.apply_pending(conn)
         conn.execute("DELETE FROM refresh_tokens WHERE expires_at <= now()")
 
 
