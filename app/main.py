@@ -2,17 +2,18 @@
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.concurrency import run_in_threadpool
 
 from app import auth
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    auth.init_pool()
+    await run_in_threadpool(auth.init_pool)
     try:
         yield
     finally:
-        auth.close_pool()
+        await run_in_threadpool(auth.close_pool)
 
 
 app = FastAPI(title="Shuqiao", lifespan=lifespan)

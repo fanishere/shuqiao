@@ -11,6 +11,7 @@ import os
 import secrets
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
+from urllib.parse import quote
 
 import jwt
 from fastapi import APIRouter, HTTPException
@@ -35,9 +36,8 @@ def _database_url() -> str:
     url = os.environ.get("DATABASE_URL")
     if url:
         return url
-    return "postgresql://shuqiao:%s@localhost:5432/shuqiao" % os.environ.get(
-        "POSTGRES_PASSWORD", ""
-    )
+    password = quote(os.environ.get("POSTGRES_PASSWORD", ""), safe="")
+    return f"postgresql://shuqiao:{password}@localhost:5432/shuqiao"
 
 ALGORITHM = "HS256"
 ACCESS_TOKEN_TTL = timedelta(minutes=15)
@@ -72,6 +72,7 @@ def init_pool() -> None:
     _pool = ConnectionPool(_database_url(), open=True, check=ConnectionPool.check_connection)
     with _pool.connection() as conn:
         conn.execute(_SCHEMA)
+        conn.execute("DELETE FROM refresh_tokens WHERE expires_at <= now()")
 
 
 def close_pool() -> None:
@@ -158,18 +159,20 @@ def login(creds: Credentials) -> dict[str, str]:
 @router.post("/refresh")
 def refresh(request: RefreshRequest) -> dict[str, str]:
     with db() as conn:
-        # DELETE ... RETURNING consumes the old token atomically; a reused
-        # token finds nothing and gets 401.
-        row = conn.execute(
-            "DELETE FROM refresh_tokens WHERE token_hash = %s"
-            " AND expires_at > now() RETURNING username",
-            (_token_hash(request.refresh_token),),
-        ).fetchone()
-        if row is None:
-            raise HTTPException(status_code=401, detail="invalid refresh token")
+        # Rotation must be one transaction: the DELETE consumes the old
+        # token and the INSERT stores its replacement, or neither happens.
+        with conn.transaction():
+            row = conn.execute(
+                "DELETE FROM refresh_tokens WHERE token_hash = %s"
+                " AND expires_at > now() RETURNING username",
+                (_token_hash(request.refresh_token),),
+            ).fetchone()
+            if row is None:
+                raise HTTPException(status_code=401, detail="invalid refresh token")
+            new_token = _issue_refresh_token(conn, row[0])
         return {
             "access_token": _issue_access_token(row[0]),
-            "refresh_token": _issue_refresh_token(conn, row[0]),
+            "refresh_token": new_token,
             "token_type": "bearer",
         }
 

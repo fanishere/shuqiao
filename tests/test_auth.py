@@ -3,6 +3,8 @@ import shutil
 import subprocess
 import time
 import unittest
+from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import quote
 
 import jwt
 from fastapi.testclient import TestClient
@@ -153,6 +155,37 @@ class LoginTest(AuthTestCase):
         self.assertEqual(response.status_code, 401)
 
 
+class DatabaseUrlTest(unittest.TestCase):
+    def test_fallback_url_contains_password(self) -> None:
+        from app import auth
+        url = os.environ.pop("DATABASE_URL", None)
+        password = os.environ.get("POSTGRES_PASSWORD")
+        try:
+            os.environ["POSTGRES_PASSWORD"] = "p@ss w:rd/%%"
+            result = auth._database_url()
+        finally:
+            if url is not None:
+                os.environ["DATABASE_URL"] = url
+            if password is not None:
+                os.environ["POSTGRES_PASSWORD"] = password
+            else:
+                os.environ.pop("POSTGRES_PASSWORD", None)
+        self.assertTrue(result.startswith("postgresql://"))
+        self.assertIn(quote("p@ss w:rd/%%", safe=""), result)
+
+    def test_database_url_wins_when_set(self) -> None:
+        from app import auth
+        url = os.environ.get("DATABASE_URL")
+        try:
+            os.environ["DATABASE_URL"] = "postgresql://x/y"
+            self.assertEqual(auth._database_url(), "postgresql://x/y")
+        finally:
+            if url is not None:
+                os.environ["DATABASE_URL"] = url
+            else:
+                os.environ.pop("DATABASE_URL", None)
+
+
 class RefreshTest(AuthTestCase):
     def test_refresh_rotates_refresh_token(self) -> None:
         self.signup()
@@ -182,6 +215,40 @@ class RefreshTest(AuthTestCase):
 
     def test_unknown_refresh_token_rejected(self) -> None:
         self.assertEqual(self.refresh("no-such-token").status_code, 401)
+
+    def test_concurrent_refresh_single_use(self) -> None:
+        self.signup()
+        token = self.login()["refresh_token"]
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            statuses = list(
+                pool.map(
+                    lambda _: self.refresh(token).status_code,
+                    range(6),
+                )
+            )
+        self.assertEqual(statuses.count(200), 1, statuses)
+        self.assertEqual(statuses.count(401), 5, statuses)
+        with self.auth.db() as conn:
+            n = conn.execute("SELECT count(*) FROM refresh_tokens").fetchone()[0]
+        self.assertEqual(n, 1)
+
+
+class StartupSweepTest(AuthTestCase):
+    def test_init_pool_purges_expired_tokens(self) -> None:
+        self.signup()
+        token = self.login()["refresh_token"]
+        with self.auth.db() as conn:
+            conn.execute(
+                "UPDATE refresh_tokens SET expires_at = now() - interval '1 second'"
+            )
+        self.auth.close_pool()
+        self.auth.init_pool()
+        with self.auth.db() as conn:
+            n = conn.execute(
+                "SELECT count(*) FROM refresh_tokens WHERE token_hash = %s",
+                (self.auth._token_hash(token),),
+            ).fetchone()[0]
+        self.assertEqual(n, 0)
 
 
 class LogoutTest(AuthTestCase):
