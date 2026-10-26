@@ -1,18 +1,86 @@
+import os
+import shutil
+import subprocess
+import time
 import unittest
-from datetime import datetime, timedelta, timezone
 
 import jwt
 from fastapi.testclient import TestClient
 
-from app import auth
-from app.main import app
+CONTAINER = "shuqiao-test-pg"
+PORT = 5441
+
+docker = shutil.which("docker")
 
 
+def _pg_ready() -> bool:
+    result = subprocess.run(
+        ["docker", "exec", CONTAINER, "pg_isready", "-U", "shuqiao", "-d", "shuqiao"],
+        capture_output=True,
+    )
+    return result.returncode == 0
+
+
+def _start_postgres() -> None:
+    subprocess.run(
+        [
+            "docker", "run", "-d", "--rm",
+            "--name", CONTAINER,
+            "-e", "POSTGRES_USER=shuqiao",
+            "-e", "POSTGRES_PASSWORD=shuqiao-test",
+            "-e", "POSTGRES_DB=shuqiao",
+            "-p", f"{PORT}:5432",
+            "postgres:18",
+        ],
+        check=True,
+        capture_output=True,
+    )
+    try:
+        for _ in range(30):
+            if _pg_ready():
+                break
+            time.sleep(1)
+        else:
+            raise RuntimeError("test postgres never became ready")
+        os.environ["DATABASE_URL"] = (
+            f"postgresql://shuqiao:shuqiao-test@localhost:{PORT}/shuqiao"
+        )
+        from app import auth
+        auth.init_pool()
+    except Exception:
+        subprocess.run(["docker", "stop", CONTAINER], capture_output=True)
+        raise
+
+
+def _stop_postgres() -> None:
+    from app import auth
+    auth.close_pool()
+    subprocess.run(["docker", "stop", CONTAINER], capture_output=True)
+
+
+def setUpModule() -> None:
+    if docker is not None:
+        _start_postgres()
+
+
+def tearDownModule() -> None:
+    if docker is not None:
+        _stop_postgres()
+
+
+@unittest.skipIf(docker is None, "docker not available")
 class AuthTestCase(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        from app import auth
+        from app.main import app
+        cls.auth = auth
+        cls.client = TestClient(app)
+
     def setUp(self) -> None:
-        auth.users.clear()
-        auth.refresh_tokens.clear()
-        self.client = TestClient(app)
+        with self.auth.db() as conn:
+            conn.execute("DELETE FROM refresh_tokens")
+            conn.execute("DELETE FROM users")
 
     def signup(self, username: str = "fan", password: str = "correct horse") -> dict:
         response = self.client.post(
@@ -28,13 +96,19 @@ class AuthTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200, response.text)
         return response.json()
 
+    def refresh(self, token: str):
+        return self.client.post("/auth/refresh", json={"refresh_token": token})
+
 
 class SignupTest(AuthTestCase):
     def test_signup_stores_hashed_password(self) -> None:
         self.signup()
-        self.assertIn("fan", auth.users)
-        self.assertNotIn("correct horse", auth.users.values())
-        self.assertTrue(auth.password_hash.verify("correct horse", auth.users["fan"]))
+        with self.auth.db() as conn:
+            row = conn.execute(
+                "SELECT password_hash FROM users WHERE username = %s", ("fan",)
+            ).fetchone()
+        self.assertIsNotNone(row)
+        self.assertTrue(self.auth.password_hash.verify("correct horse", row[0]))
 
     def test_duplicate_signup_rejected(self) -> None:
         self.signup()
@@ -57,11 +131,13 @@ class LoginTest(AuthTestCase):
         self.signup()
         body = self.login()
         self.assertEqual(body["token_type"], "bearer")
-        self.assertIn(body["refresh_token"], auth.refresh_tokens)
         claims = jwt.decode(
-            body["access_token"], auth.SECRET_KEY, algorithms=["HS256"]
+            body["access_token"], self.auth.SECRET_KEY, algorithms=["HS256"]
         )
         self.assertEqual(claims["sub"], "fan")
+        with self.auth.db() as conn:
+            n = conn.execute("SELECT count(*) FROM refresh_tokens").fetchone()[0]
+        self.assertEqual(n, 1)
 
     def test_wrong_password_rejected(self) -> None:
         self.signup()
@@ -78,9 +154,6 @@ class LoginTest(AuthTestCase):
 
 
 class RefreshTest(AuthTestCase):
-    def refresh(self, token: str):
-        return self.client.post("/auth/refresh", json={"refresh_token": token})
-
     def test_refresh_rotates_refresh_token(self) -> None:
         self.signup()
         old = self.login()["refresh_token"]
@@ -88,22 +161,24 @@ class RefreshTest(AuthTestCase):
         self.assertEqual(response.status_code, 200)
         new = response.json()["refresh_token"]
         self.assertNotEqual(new, old)
-        self.assertNotIn(old, auth.refresh_tokens)
         self.assertEqual(self.refresh(old).status_code, 401)
         self.assertEqual(self.refresh(new).status_code, 200)
+
+    def test_refresh_token_stored_as_hash_not_plaintext(self) -> None:
+        self.signup()
+        token = self.login()["refresh_token"]
+        with self.auth.db() as conn:
+            rows = [r[0] for r in conn.execute("SELECT token_hash FROM refresh_tokens")]
+        self.assertEqual(rows, [self.auth._token_hash(token)])
 
     def test_expired_refresh_token_rejected(self) -> None:
         self.signup()
         token = self.login()["refresh_token"]
-        username, _ = auth.refresh_tokens[token]
-        auth.refresh_tokens[token] = (
-            username,
-            datetime.now(timezone.utc)
-            - auth.REFRESH_TOKEN_TTL
-            - timedelta(seconds=1),
-        )
+        with self.auth.db() as conn:
+            conn.execute(
+                "UPDATE refresh_tokens SET expires_at = now() - interval '1 second'"
+            )
         self.assertEqual(self.refresh(token).status_code, 401)
-        self.assertNotIn(token, auth.refresh_tokens)
 
     def test_unknown_refresh_token_rejected(self) -> None:
         self.assertEqual(self.refresh("no-such-token").status_code, 401)
@@ -117,10 +192,16 @@ class LogoutTest(AuthTestCase):
             "POST", "/auth/logout", json={"refresh_token": tokens["refresh_token"]}
         )
         self.assertEqual(response.status_code, 204)
-        revoked = self.client.post(
-            "/auth/refresh", json={"refresh_token": tokens["refresh_token"]}
-        )
-        self.assertEqual(revoked.status_code, 401)
+        self.assertEqual(self.refresh(tokens["refresh_token"]).status_code, 401)
+
+
+class PersistenceTest(AuthTestCase):
+    def test_tokens_survive_pool_restart(self) -> None:
+        self.signup()
+        tokens = self.login()
+        self.auth.close_pool()
+        self.auth.init_pool()
+        self.assertEqual(self.refresh(tokens["refresh_token"]).status_code, 200)
 
 
 if __name__ == "__main__":
