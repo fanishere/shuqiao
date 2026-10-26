@@ -6,6 +6,9 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    environment:
+      SHUQIAO_SECRET_KEY: ${SHUQIAO_SECRET_KEY:?set SHUQIAO_SECRET_KEY}
+      DATABASE_URL: postgresql://shuqiao:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@db:5432/shuqiao
 
   db:
     image: postgres:18
