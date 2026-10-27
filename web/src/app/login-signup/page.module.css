@@ -1,4 +1,14 @@
 .page {
+  /* Brand tokens defined exactly once, on the page root, so this page renders
+     the mockup palette regardless of the scaffold's OS dark-mode query. */
+  --green: #1d5b44;
+  --background: #f4f4ef;
+  --text-primary: #1e1e1e;
+  --text-secondary: #555555;
+  --border: #d6d6d2;
+  --track: #e4e4df;
+  color-scheme: light;
+
   min-height: 100vh;
   max-width: 26rem;
   margin: 0 auto;
@@ -7,6 +17,7 @@
   flex-direction: column;
   gap: 2.5rem;
   background: var(--background);
+  color: var(--text-primary);
 }
 
 .header {
