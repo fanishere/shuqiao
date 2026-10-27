@@ -1,0 +1,25 @@
+.track {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: var(--track);
+  border-radius: 1.25rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.625rem 0;
+  border: none;
+  border-radius: 1rem;
+  background: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.active {
+  background: #ffffff;
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
