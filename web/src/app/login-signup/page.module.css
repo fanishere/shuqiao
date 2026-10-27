@@ -10,11 +10,12 @@
   color-scheme: light;
 
   min-height: 100vh;
-  max-width: 26rem;
+  max-width: 64rem;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2.5rem;
   background: var(--background);
   color: var(--text-primary);
@@ -23,7 +24,14 @@
 .header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  text-align: center;
+}
+
+.toggleWrap {
+  width: 100%;
+  max-width: 26rem;
 }
 
 .brand {
@@ -64,15 +72,10 @@
   color: var(--text-secondary);
 }
 
-.signupStub {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.signupNote {
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
+@media (max-width: 40rem) {
+  .page {
+    padding: 3rem 1.5rem;
+  }
 }
 
 .submit {

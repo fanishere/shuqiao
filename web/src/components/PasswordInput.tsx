@@ -9,9 +9,10 @@ type Props = {
   value: string;
   onChange: (value: string) => void;
   disabled?: boolean;
+  autoComplete?: string;
 };
 
-export default function PasswordInput({ id, label, value, onChange, disabled }: Props) {
+export default function PasswordInput({ id, label, value, onChange, disabled, autoComplete }: Props) {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -27,7 +28,7 @@ export default function PasswordInput({ id, label, value, onChange, disabled }: 
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder="Your password"
-          autoComplete="current-password"
+          autoComplete={autoComplete ?? "current-password"}
           disabled={disabled}
         />
         <button

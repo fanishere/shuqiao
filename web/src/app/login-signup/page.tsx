@@ -3,11 +3,25 @@
 import { useState } from "react";
 
 import LoginPanel from "./LoginPanel";
+import SignupPanel from "./SignupPanel";
 import TabToggle, { type Tab } from "@/components/TabToggle";
 import styles from "./page.module.css";
 
+const COPY: Record<Tab, { heading: string; subtitle: string }> = {
+  login: {
+    heading: "Welcome back",
+    subtitle: "Log in to pick up where you left off.",
+  },
+  signup: {
+    heading: "Create your account",
+    subtitle: "Save words, track your HSK progress and review anywhere.",
+  },
+};
+
 export default function LoginSignupPage() {
   const [tab, setTab] = useState<Tab>("login");
+  const [loginUsername, setLoginUsername] = useState("");
+  const { heading, subtitle } = COPY[tab];
 
   return (
     <main className={styles.page}>
@@ -16,23 +30,23 @@ export default function LoginSignupPage() {
           <span className={styles.logo}>词</span>
           <span className={styles.wordmark}>SHUQIAO</span>
         </div>
-        <h1 className={styles.heading}>Welcome back</h1>
-        <p className={styles.subtitle}>Log in to pick up where you left off.</p>
+        <h1 className={styles.heading}>{heading}</h1>
+        <p className={styles.subtitle}>{subtitle}</p>
       </div>
 
-      <TabToggle active={tab} onChange={setTab} />
+      <div className={styles.toggleWrap}>
+        <TabToggle active={tab} onChange={setTab} />
+      </div>
 
       {tab === "login" ? (
-        <LoginPanel />
+        <LoginPanel key={loginUsername} defaultUsername={loginUsername} />
       ) : (
-        <div className={styles.signupStub}>
-          <p className={styles.signupNote}>
-            Sign-up is on its way. Switch to <strong>Log in</strong> if you already have an account.
-          </p>
-          <button type="button" className={styles.submit} disabled title="coming soon">
-            Sign up
-          </button>
-        </div>
+        <SignupPanel
+          onSignedUp={(username) => {
+            setLoginUsername(username);
+            setTab("login");
+          }}
+        />
       )}
     </main>
   );

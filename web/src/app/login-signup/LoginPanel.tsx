@@ -21,14 +21,23 @@ type FormState =
   | { kind: "error"; message: string }
   | { kind: "success" };
 
-export default function LoginPanel() {
+export default function LoginPanel({ defaultUsername = "" }: { defaultUsername?: string }) {
   const router = useRouter();
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(defaultUsername);
   const [password, setPassword] = useState("");
   const [state, setState] = useState<FormState>({ kind: "idle" });
+  const [fieldErrors, setFieldErrors] = useState<{ username?: string; password?: string }>({});
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const errors: { username?: string; password?: string } = {};
+    if (!username.trim()) errors.username = "Enter your username.";
+    if (!password.trim()) errors.password = "Enter your password.";
+    if (errors.username || errors.password) {
+      setFieldErrors(errors);
+      return;
+    }
+    setFieldErrors({});
     setState({ kind: "submitting" });
     try {
       const res = await fetch("/api/auth/login", {
@@ -71,6 +80,9 @@ export default function LoginPanel() {
           autoComplete="username"
           disabled={busy}
         />
+        {fieldErrors.username && (
+          <p className={styles.fieldError}>{fieldErrors.username}</p>
+        )}
       </div>
 
       <PasswordInput
@@ -80,6 +92,9 @@ export default function LoginPanel() {
         onChange={setPassword}
         disabled={busy}
       />
+      {fieldErrors.password && (
+        <p className={styles.fieldError}>{fieldErrors.password}</p>
+      )}
 
       <div className={styles.forgotRow}>
         <a className={styles.forgot} title="coming soon" aria-disabled="true">

@@ -31,6 +31,9 @@ export async function POST(request: NextRequest): Promise<Response> {
   if (upstream.status === 401) {
     return Response.json({ error: "invalid_credentials" }, { status: 401 });
   }
+  if (upstream.status === 422) {
+    return Response.json({ error: "invalid_request" }, { status: 400 });
+  }
   if (!upstream.ok) {
     return Response.json({ error: "unavailable" }, { status: 502 });
   }
