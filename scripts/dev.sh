@@ -7,7 +7,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DB_CONTAINER="shuqiao-db"
 DB_PORT=5440
 API_PORT=8000
-WEB_PORT=3000
+WEB_PORT="${WEB_PORT:-3000}"
 
 command -v docker >/dev/null || { echo "docker is required"; exit 1; }
 
